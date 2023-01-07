@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    color: #222222;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+.container{
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    min-height: 60vh;
+    width: 24rem;
+    border-radius: 16px;
+    padding: 2rem 3rem;
+    box-shadow: 0 30px 30px rgba(0, 0, 0, 0.103), 0 0 50px rgba(0, 0, 0, 0.12);
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+.burger{
+    min-width: 32vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform-style: preserve-3d;
+}
+.burger img{
+    width: 20rem;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+.circle{
+    position: absolute;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, rgba(250, 88, 69, .75), rgba(244, 213, 64, .75));
+}
+.info{
+    transform-style: preserve-3d;
+}
+.info h1{
+    font-size: 1.8rem;
+    padding: 1rem 0 0;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+.info h3{
+    font-size: 1rem;
+    padding: 1rem 0 2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #555555;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+.flavors{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform-style: preserve-3d;
+    transition: all .6s ease-out;
+}
+.flavors button{
+    padding: .5rem 1.4rem;
+    background: none;
+    border: none;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
+    border-radius: 30px;
+    color: #444444;
+    transition: .2s
+}
+.flavors button:hover{
+    cursor: pointer;
+    background-color: #EDA64E;
+    color: #ffffff;
+}
+.purchase{
+    margin-top: 5rem;
+    transform-style: preserve-3d;
+    transition: .2s;
+}
+.purchase button{
+    width: 100%;
+    color: #ffffff;
+    background-color: #f1664e;
+    border-radius: 30px;
+    border: none;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    transform: .2s;
+}
+.purchase button:hover{
+    cursor: pointer;
+    background-color: #ff5031;
+}
+.animBurger{
+    transform: translateZ(100px) rotateZ(-10deg);
+    -moz-transform: translateZ(80px) rotateZ(-10deg);
+}
+.animTitle{
+    transform: translateZ(80px);
+    -moz-transform: translateZ(80px);
+}
+.animSubTitle{
+    transform: translateZ(60px);
+    -moz-transform: translateZ(70px);
+}
+.animFlavors{
+    transform: translateZ(60px);
+    -moz-transform: translateZ(60px);
+}
+.animPurchase{
+    transform: translateZ(60px);
+    -moz-transform: translateZ(40px);
+}
